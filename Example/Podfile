@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HelpSumoSDK_Example' do
+  pod 'HelpSumoSDK', :path => '../'
+
+  target 'HelpSumoSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
