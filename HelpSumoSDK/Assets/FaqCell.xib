@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="singleFaqCell" id="wve-IU-iCh" customClass="FaqCell" customModule="TestDemoPodSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wve-IU-iCh" id="Ne9-9s-1z0">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-fS-VE9">
+                        <rect key="frame" x="8" y="18" width="384" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQa-5Y-kh6">
+                        <rect key="frame" x="8" y="59" width="384" height="47.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dQa-5Y-kh6" firstAttribute="top" secondItem="muQ-fS-VE9" secondAttribute="bottom" constant="20" id="1mT-Yd-q1x"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="dQa-5Y-kh6" secondAttribute="leading" id="Vb5-ZV-vAa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dQa-5Y-kh6" secondAttribute="trailing" id="hTZ-yI-tlT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="dQa-5Y-kh6" secondAttribute="bottom" constant="5.5" id="rf1-Il-dRz"/>
+                    <constraint firstItem="muQ-fS-VE9" firstAttribute="top" secondItem="Ne9-9s-1z0" secondAttribute="topMargin" constant="10" id="s85-bj-1fc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="muQ-fS-VE9" secondAttribute="trailing" id="unk-p9-xar"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="muQ-fS-VE9" secondAttribute="leading" id="yqF-wi-Z1l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelAnswer" destination="dQa-5Y-kh6" id="1vK-JR-RF3"/>
+                <outlet property="labelQuestion" destination="muQ-fS-VE9" id="5CV-qA-4m8"/>
+            </connections>
+            <point key="canvasLocation" x="124" y="100"/>
+        </tableViewCell>
+    </objects>
+</document>

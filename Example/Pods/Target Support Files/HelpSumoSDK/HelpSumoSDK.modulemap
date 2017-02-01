@@ -1,0 +1,6 @@
+framework module HelpSumoSDK {
+  umbrella header "HelpSumoSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

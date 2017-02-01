@@ -1,0 +1,24 @@
+PODS:
+  - Cosmos (7.0.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - HelpSumoSDK (0.1.0):
+    - Cosmos
+    - FMDB
+
+DEPENDENCIES:
+  - HelpSumoSDK (from `../`)
+
+EXTERNAL SOURCES:
+  HelpSumoSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Cosmos: 2c8299147138758f6ebbb247cf1aeed77998bdf9
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  HelpSumoSDK: a133fbd4f469a3f98762f58aaa0df1ff37c1807d
+
+PODFILE CHECKSUM: 27d3b157e7c900b4ad57dd960c5603873828f92e
+
+COCOAPODS: 1.1.1

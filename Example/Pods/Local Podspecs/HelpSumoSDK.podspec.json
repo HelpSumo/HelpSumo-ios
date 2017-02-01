@@ -1,0 +1,35 @@
+{
+  "name": "HelpSumoSDK",
+  "version": "0.1.0",
+  "summary": "HelpSumoSDK adds a additional layer of support to your app.",
+  "description": "Adding HelpSumo SDK to your app allows you to create/view support tickets.To view articles and faq related to your app.",
+  "homepage": "https://github.com/HelpSumo/HelpSumo-ios",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Help Sumo": "careysam@ajsquare.net"
+  },
+  "source": {
+    "git": "https://github.com/HelpSumo/HelpSumo-ios.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HelpSumoSDK/Classes/**/*",
+  "resource_bundles": {
+    "HelpSumoSDK": [
+      "HelpSumoSDK/Assets/*.{png,jpg,xib,storyboard}"
+    ]
+  },
+  "dependencies": {
+    "FMDB": [
+
+    ],
+    "Cosmos": [
+
+    ]
+  }
+}
