@@ -82,7 +82,7 @@ Permissions Required
 
 ## Author
 
-Help Sumo, careysam@ajsquare.net
+Help Sumo
 
 ## License
 
