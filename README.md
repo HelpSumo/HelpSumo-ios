@@ -24,13 +24,14 @@ pod "HelpSumoSDK"
 Import the Pod
     import HelpSumoSDK
 
-Set API Key 
-    // APIKey = “g9sfosdf8dfosdf7sfsfj3asdgh1m6” 
-		HSConfig.setAPIKey(“g9sfosdf8dfosdf7sfsfj3asdgh1m6”)
+Set API Key
+
+   	// APIKey = “g9sfosdf8dfosdf7sfsfj3asdgh1m6” 
+	HSConfig.setAPIKey(“g9sfosdf8dfosdf7sfsfj3asdgh1m6”)
 
 To Add Ticket module
 
-  let frameworkBundle = Bundle(for:  TicketHomeController.self)
+  	let frameworkBundle = Bundle(for:  TicketHomeController.self)
 	let bundleURL = frameworkBundle.resourceURL?.AppendingPathComponent("HelpSumoSDK.bundle")
 	let resourceBundle = Bundle(url: bundleURL!)
 	let storyboard = UIStoryboard(name: "TicketList", bundle: resourceBundle)
@@ -39,14 +40,45 @@ To Add Ticket module
 
 To Add Faq module
 
-  let frameworkBundle = Bundle(for:  TicketHomeController.self)
+  	let frameworkBundle = Bundle(for:  TicketHomeController.self)
 	let bundleURL = frameworkBundle.resourceURL?.AppendingPathComponent( "HelpSumoSDK.bundle")
 	let resourceBundle = Bundle(url: bundleURL!)
 	let storyboard = UIStoryboard(name: "KnowledgeBase", bundle: resourceBundle)
 	let controller = storyboard.instantiateViewController(withIdentifier:"knowledgeBoard") as UIViewController       
             
- 	    self.present(controller, animated: true, completion: nil)
+ 	self.present(controller, animated: true, completion: nil)
 
+To Add Article module
+
+	let frameworkBundle = Bundle(for:  TicketHomeController.self)
+	let bundleURL = frameworkBundle.resourceURL?.AppendingPathComponent( "HelpSumoSDK.bundle")
+	let resourceBundle = Bundle(url: bundleURL!)
+	let storyboard = UIStoryboard(name: "Article", bundle: resourceBundle)
+	let controller = storyboard.instantiateViewController(withIdentifier: "articleBoard") 									as UIViewController       
+	
+ 	self.present(controller, animated: true, completion: nil)
+
+Permissions Required
+	
+	Add the following to info.plist file
+
+		<key>NSPhotoLibraryUsageDescription</key>
+		    <string>To upload images related to ticket</string>
+		    <key>NSAppTransportSecurity</key>
+		    <dict>
+			<key>NSExceptionDomains</key>
+			<dict>
+			    <key>helpsumo.com</key>
+			    <dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<string>TLSv1.1</string>
+			    </dict>
+			</dict>
+		    </dict>
 
 ## Author
 
