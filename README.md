@@ -19,6 +19,34 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "HelpSumoSDK"
 ```
+## Usage
+
+Import the Pod
+    import HelpSumoSDK
+
+Set API Key 
+    // APIKey = “g9sfosdf8dfosdf7sfsfj3asdgh1m6” 
+		HSConfig.setAPIKey(“g9sfosdf8dfosdf7sfsfj3asdgh1m6”)
+
+To Add Ticket module
+
+  let frameworkBundle = Bundle(for:  TicketHomeController.self)
+	let bundleURL = frameworkBundle.resourceURL?.AppendingPathComponent("HelpSumoSDK.bundle")
+	let resourceBundle = Bundle(url: bundleURL!)
+	let storyboard = UIStoryboard(name: "TicketList", bundle: resourceBundle)
+	let controller = storyboard.instantiateViewController(withIdentifier: "ticketsHomeController") as UIViewController       
+ 	self.present(controller, animated: true, completion: nil)
+
+To Add Faq module
+
+  let frameworkBundle = Bundle(for:  TicketHomeController.self)
+	let bundleURL = frameworkBundle.resourceURL?.AppendingPathComponent( "HelpSumoSDK.bundle")
+	let resourceBundle = Bundle(url: bundleURL!)
+	let storyboard = UIStoryboard(name: "KnowledgeBase", bundle: resourceBundle)
+	let controller = storyboard.instantiateViewController(withIdentifier:"knowledgeBoard") as UIViewController       
+            
+ 	    self.present(controller, animated: true, completion: nil)
+
 
 ## Author
 
